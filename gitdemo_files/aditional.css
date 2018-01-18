@@ -1,0 +1,66 @@
+body{ 
+	background: url(/assets/images/bg-pattern.png) #F9F9F9;
+}
+.profile{
+	 width: 120px;
+	 border-radius: 50%;
+}
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+
+}
+.wrap-card{
+	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: #FCFCFC;
+    transition: 0.1s linear;
+}
+.wrap-card:hover{
+	text-decoration: none;
+	transform: scale(1.05);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-right: 5px solid #FDA246;
+    cursor: pointer;
+}
+.wrap-card > em{
+	color: #545E6C;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media (max-width: 768px) {
+	[class*="col-"]{
+		width: 50% !important;
+	}
+}
+@media (max-width: 576px) {
+	[class*="col-"]{
+		width: 100% !important;
+	}
+}
